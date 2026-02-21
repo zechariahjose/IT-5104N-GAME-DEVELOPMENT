@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://dspoargfv7ta8"]
+
+[ext_resource type="Script" uid="uid://dmf5pwry4hox1" path="res://script/player.gd" id="1_pylmc"]
+[ext_resource type="Texture2D" uid="uid://bn12wi0vf46q3" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_000.png" id="1_q13i1"]
+[ext_resource type="Texture2D" uid="uid://d1rivwyxuv8jg" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_001.png" id="2_pylmc"]
+[ext_resource type="Texture2D" uid="uid://buj1umw3ouive" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_002.png" id="3_pbfsw"]
+[ext_resource type="Texture2D" uid="uid://dnitqbjdr0ifb" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_003.png" id="4_5tmop"]
+[ext_resource type="Texture2D" uid="uid://10lhlqkqjvqw" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_004.png" id="5_7ahtn"]
+[ext_resource type="Texture2D" uid="uid://c4nvntfs5jl0i" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_005.png" id="6_7lmhl"]
+[ext_resource type="Texture2D" uid="uid://cowvlu0dum70g" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_006.png" id="7_dx0e4"]
+[ext_resource type="Texture2D" uid="uid://cskm1xuna1qmb" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_007.png" id="8_jm5j8"]
+[ext_resource type="Texture2D" uid="uid://cd8u4scg7tx7e" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_008.png" id="9_7hik5"]
+[ext_resource type="Texture2D" uid="uid://cnaotvb2ghx6o" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_009.png" id="10_qtqh7"]
+[ext_resource type="Texture2D" uid="uid://b2bfjfyejo0gf" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_010.png" id="11_2wuci"]
+[ext_resource type="Texture2D" uid="uid://c6kwdsbrg38lx" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_011.png" id="12_iruf7"]
+[ext_resource type="Texture2D" uid="uid://hbeophjda736" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_012.png" id="13_j5n4i"]
+[ext_resource type="Texture2D" uid="uid://ba5ghcdge2gt7" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_013.png" id="14_634y6"]
+[ext_resource type="Texture2D" uid="uid://bt75aypg15gsv" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_014.png" id="15_efrwb"]
+[ext_resource type="Texture2D" uid="uid://b7v8b5lbwwgxr" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_015.png" id="16_hiqhm"]
+[ext_resource type="Texture2D" uid="uid://be70ulkj32pkn" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_016.png" id="17_tkwlq"]
+[ext_resource type="Texture2D" uid="uid://cj4ax1rtmvqx4" path="res://assets/images/player/idle/0_Fallen_Angels_Idle_017.png" id="18_hl5qd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ek41f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_q13i1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pylmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pbfsw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5tmop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7ahtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7lmhl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dx0e4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jm5j8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7hik5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_qtqh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2wuci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_iruf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_j5n4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_634y6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_efrwb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_hiqhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_tkwlq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_hl5qd")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pylmc"]
+size = Vector2(34, 55)
+
+[node name="player" type="CharacterBody2D" unique_id=1421279634]
+script = ExtResource("1_pylmc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1246008922]
+scale = Vector2(0.102454074, 0.09753886)
+sprite_frames = SubResource("SpriteFrames_ek41f")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.59483755
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=551197879]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_pylmc")
