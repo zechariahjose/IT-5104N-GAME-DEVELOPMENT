@@ -8,3 +8,13 @@ Gameplay Mechanics
 Subtopics: Handling input (keyboard/gamepad), physics bodies (rigid/kinematic), collision detection. Basics of player controllers (movement, jumping).
 Exercises: Build a dodge mechanic or simple platformer character; test with physics tweaks.
 Links:
+
+
+Week 3: Activity1 UI/UX & Audio
+Subtopics:
+      HUD elements (health bars, scores), menu systems (CanvasLayer), audio
+      buses for mixing SFX/music.
+Exercises:
+      Integrate UI into your game proto; add sound effects, walk, run, slash, etc. You may also add game music, introduction, and so on.
+Links:
+      GUI in Godot | Audio Features | Audacity Guide.
